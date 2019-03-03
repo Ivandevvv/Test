@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body><a href="#" id="anchor"></a>
+    <header class="header">
+        <section class="header__authorization">
+            <div class="header__container">
+                <div class="header__subscription">
+                    <p class="sing-in__login sing-in__login_first header__link">
+                        <a href="#" class="sing-in__login-link header__link">Подпишись</a>
+                    </p>
+                </div>
+                <div class="header__sing-in">
+                    <p id="login" class="sing-in__login header__link">
+                        <img src="img/avatar.png" class="sing-in__login-img">
+                        Войти
+                    </p>
+                    <p class="sing-in__login header__link">
+                        Создать аккаунт
+                    </p>
+                    <button class="sing-in__button">Подписка</button>
+                </div>
+            </div>  
+        </section>
+        <section class="header__logo">
+            <div class="header__container">
+                <div class="header__container-logo">
+                    <div>
+                        <img src="img/BURO.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header__menu">
+            <div class="header__container">
+                <nav class="header__navigation">
+                    <ul class="header__list header__nav-paragraf">
+                        <li><img src="img/BURO-scroll.png" alt=""></li>
+                        <li><a href="#">мода</a></li>
+                        <li><a href="#">культура</a></li>
+                        <li><a href="#">красота</a></li>
+                        <li><a href="#">технологии</a></li>
+                        <li><a href="#">личность</a></li>
+                        <li><a href="#">видео</a></li>
+                    </ul>
+                </nav>
+                <div class="header__burger_hidden">
+                    <div class="header__burger-logo">
+                        <img src="img/BURO.png" alt="">
+                    </div>
+                    <div class="header__burger-menu">
+                        <div id="loginTablet" class="burger-menu__item"><img src="img/avatar.png" alt="" class="burger-menu__login-img"></div>
+                        <div class="burger-menu__item"><img src="img/menu.png" alt="" class="menu-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="header__menu_hidden">
+            <div class="menu">
+                <div class="menu__search">
+                    <div class="search__contain">
+                        <div class="search__contain-input">
+                            <input type="text" placeholder="Введите слово, автора или" class="contain-input__item">
+                        </div>
+                        <div class="search__contain-icon">
+                            <img src="img/search.png" alt="">
+                        </div>
+                    </div>
+                    <div class="menu__close">
+                        <img src="img/close.png" alt="">
+                    </div>
+                </div>
+                <nav class="menu__navigation">
+                    <ul class="menu__list header__nav-paragraf">
+                        <li class="menu__list-item"><a href="#" class="header__nav-paragraf link__head">главная</a></li>
+                        <li class="menu__list-item">мода<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Авторы</a></li>
+                                <li><a href="#" class="header__link">Подписчики</a></li>
+                                <li><a href="#" class="header__link">Медиа</a></li>
+                                <li><a href="#" class="header__link">Агенты</a></li>
+                                <li><a href="#" class="header__link">Инструкции</a></li>
+                                <li><a href="#" class="header__link">Вакансии</a></li>
+                                <li><a href="#" class="header__link">Авторы</a></li>
+                                <li><a href="#" class="header__link">Подписчики</a></li>
+                                <li><a href="#" class="header__link">Медиа</a></li>
+                                <li><a href="#" class="header__link">Агенты</a></li>
+                                <li><a href="#" class="header__link">Инструкции</a></li>
+                                <li><a href="#" class="header__link">Вакансии</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">культура<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Культура!</a></li>
+                                <li><a href="#" class="header__link">Культура!</a></li>
+                                <li><a href="#" class="header__link">Культура!</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">красота<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Красота!</a></li>
+                                <li><a href="#" class="header__link">Красота!</a></li>
+                                <li><a href="#" class="header__link">Красота!</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">технологии<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Технологии!</a></li>
+                                <li><a href="#" class="header__link">Технологии!</a></li>
+                                <li><a href="#" class="header__link">Технологии!</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">личность<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Личность!</a></li>
+                                <li><a href="#" class="header__link">Личность!</a></li>
+                                <li><a href="#" class="header__link">Личность!</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__list-item">видео<img src="img/arrow-next.png" alt="">
+                            <ul class="submenu__list_hidden submenu__list">
+                                <li><a href="#" class="header__link">Видео!</a></li>
+                                <li><a href="#" class="header__link">Видео!</a></li>
+                                <li><a href="#" class="header__link">Видео!</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__modal-login_hide header__modal-login ">
+                <div class="modal-login__container">
+                    <h1 class="modal-login__title">Войти</h1>
+                    <div class="modal-login__main">
+                        <p class="modal-login__paragraf">Ваш e-mail</p>
+                        <input id="mail" type="text" class="modal-login__main-mail">
+                        <p class="modal-login__paragraf">Пароль</p>
+                        <input id="pass" type="password" class="modal-login__main-mail">
+                        <label class="contain-check">
+                            <input type="checkbox" class="modal-login__main-check">
+                            <p class="modal-login__paragraf">Запомнить меня</p>
+                        </label>
+                    </div>
+                    <div class="modal-login__footer">
+                        <button class="modal-login__footer-button">войти</button>
+                        <div class="modal-login__footer-wrapper">
+                            <div class="footer-wrapper__paragraf">
+                                <p>У вас нет аккаунта?</p>
+                            </div>
+                            <div class="footer-wrapper__link">
+                                <p><a href="#">Создать аккаунт</a></p>
+                                <p><a href="#">Подписаться</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/close.png" alt="close" class="modal-login__close">
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section class="main__articles">
+            <div class="main__container">
+                <div class="articles__wrapper">
+                    <div class="articles__subwrapper"> <!--главный содержит 3 статьи-->
+                        <div class="articles__news-feed"> <!--содердит 2 маленькие статьи-->
+                            <div class="news-feed__item">
+                                <div class="title__container">
+                                    <p class="title__par">искусство</p>
+                                    <h3 class="articule__title">Уличный художник Триттман рисует для Buro</h3>
+                                </div>
+                                <p class="articule__author">М. Иванов и другие</p>
+                                <p class="articule__paragraf"><img src="img/articule1.png" alt="" class="articule__img">
+                                    Осенью французский уличный художник Триттман (3ttman) приезжал в Москву, чтобы 
+                                    принять участие в выставке «Campo Viejo:Streets of color» — спецпроекте биеннале
+                                    искусства уличной волны «Артмоссфера». На счету у Триттмана — сотрудничество с Tate 
+                                    Modern и яркие муралы во всех мировых столицах.
+                                </p>
+                                <p class="articule__date">14.01.19</p>
+                            </div>
+                            <div class="news-feed__item">
+                                <div class="title__container">
+                                    <p class="title__par">искусство</p>
+                                    <h3 class="articule__title">Что можно увидеть в этом году на BRAFA</h3>
+                                </div>
+                                <p class="articule__author">Мария Севастьянова</p>
+                                <p class="articule__paragraf"><img src="img/articule2.png" alt="" class="articule__img articule__img_second">
+                                    В Брюсселе идёт 64-я сессия старейшей европейской ярмарки искусства BRAFA — не только старейшей, но и 
+                                    В Брюсселе идёт 64-я сессия старейшей европейской ярмарки искусства BRAFA — не только старейшей, но и 
+                                    открытой самым разнообразным формам и течениям в искусстве, дружелюбной по отношению буквально ко 
+                                    всем художникам, что очень вдохновляет. 
+                                </p>
+                                <p class="articule__date">14.01.19</p>
+                            </div>
+                        </div>
+                        <div class="articles__title-news">
+                            <div class="title-news__img-wrapper"><img src="img/articule3.png" alt="" class="img-wrapper__item"></div>
+                            <div class="title__container">
+                                <p class="title__par title-news__par">индустрия</p>
+                                <h3 class="articule__title articule__title-header">Cовременное искусство на выставке «Анна Франк. Дневники холокоста»</h3>
+                            </div>
+                            <p class="articule__author title-news__autor">Алина Вострикова</p>
+                            <p class="articule__paragraf title-news__paragraf">
+                                Герман Нитч — представитель венского акционизма, идеолог шокирующих перформансов с использованием крови 
+                                и туш животных. В 1960-х Нитч занимался имитацией жертвоприношений — так он пытался противостоять логике 
+                                товарного производстваи потребления.
+                            </p>
+                            <p class="articule__date title-news__date">14.01.19</p>
+                        </div> <!--титульная статья-->
+                    </div>
+                    <div class="articles__news-bottom">
+                        <div class="news-bottom__item">
+                            <div class="title__container">
+                                <p class="title__par">Театр</p>
+                                <h3 class="articule__title">2019-й — Год театра: что это значит и чего ждать</h3>
+                            </div>
+                            <p class="articule__author">Алина Исмаилова</p>
+                            <p class="articule__paragraf">
+                                Переключиться на радикальный оптимизм, который подразумевает под собой Год театра, 
+                                после такого болезненного в культурном (и не только) плане 2018-го — не самая простая 
+                                задача. Наиболее тяжелая часть года пришлась на весну и лето: в начале марта от 
+                                сердечного приступа скончался Олег Табаков
+                            </p>
+                            <p class="articule__date">14.01.19</p>
+                        </div>
+                        <div class="news-bottom__item">
+                            <div class="title__container">
+                                <p class="title__par">Театр</p>
+                                <h3 class="articule__title">Сергей Полунин: премьера перформанса The Frames</h3>
+                            </div>
+                            <p class="articule__author">Алина Исмаилова</p>
+                            <p class="articule__paragraf">
+                                Выступление Полунина будет сопровождаться музыкальным произведением Рихтера 
+                                «The Song of Distant Earth», которое было специально создано для Перекрёстного 
+                                года культуры Катара и России — 2018
+                            </p>
+                            <p class="articule__date news-bottom__date">14.01.19</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__project">
+                    <div class="project__item">
+                        <p class="project__paragraf">Russian project <img src="img/right-arrow.png" alt=""></p>
+                        <div class="project__wrapper">
+                            <p class="articule__paragraf project__par">За кого проголосуете? <span class="link__contain"><a href="#" class="header__link">Голосовать »</a></span></p>
+                            <img src="img/probleski_port.png" alt="" class="project__img">
+                        </div>
+                    </div>
+                    <div class="project__item">
+                        <p class="project__paragraf">Russian project <img src="img/right-arrow.png" alt=""></p>
+                        <div class="project__wrapper">
+                            <p class="articule__paragraf project__par">
+                                Выбираем лучшие проекты,
+                                созданные в 2018 году россиянами.
+                                6 номинаций — 6 лауреатов.
+                            </p>
+                            <img src="img/awards.png" alt="" class="project__img project__img_second">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__back">
+                <div class="main__container main__container_back">
+                    <div>
+                        <a href="#anchor" class="back__button">Вернуться наверх</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__link">
+                <div class="footer__link-contain">
+                    <ul class="footer__link-list footer__link-list_no-padding">
+                        <li class="header__nav-paragraf">Контакты</li>
+                        <li><a href="#" class="header__link">Поиск</a></li>
+                        <li><a href="#" class="header__link">Просмотры</a></li>
+                        <li><a href="#" class="header__link">Комментарии</a></li>
+                        <li><a href="#" class="header__link">Прочее</a></li>
+                    </ul>
+                </div>
+                <div class="footer__link-contain">
+                    <ul class="footer__link-list">
+                        <li class="header__nav-paragraf">О проекте</li>
+                        <li><a href="#" class="header__link">Авторы</a></li>
+                        <li><a href="#" class="header__link">Подписчики</a></li>
+                        <li><a href="#" class="header__link">Медиа</a></li>
+                        <li><a href="#" class="header__link">Агенты</a></li>
+                        <li><a href="#" class="header__link">Инструкции</a></li>
+                        <li><a href="#" class="header__link">Вакансии</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__link">
+                <div class="footer__link-contain">
+                    <ul class="footer__link-list">
+                        <li class="header__nav-paragraf">Подписки</li>
+                        <li><a href="#" class="header__link">Подписка</a></li>
+                        <li><a href="#" class="header__link">Новости</a></li>
+                        <li><a href="#" class="header__link">Создать аккаунт</a></li>
+                        <li><a href="#" class="header__link">Личный кабинет</a></li>
+                    </ul>
+                </div>
+                <div class="footer__link-contain link__item_no-border">
+                    <ul class="footer__link-list">
+                        <li class="header__nav-paragraf">Архив статей</li>
+                        <li><a href="#" class="header__link">Искусство</a></li>
+                        <li><a href="#" class="header__link">Кино</a></li>
+                        <li><a href="#" class="header__link">Музыка</a></li>
+                        <li><a href="#" class="header__link">Театр</a></li>
+                        <li><a href="#" class="header__link">Мода</a></li>
+                        <li><a href="#" class="header__link">Поп-культура</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__link">
+                <div class="footer__link-contain">
+                    <ul class="footer__link-list">
+                        <li class="header__nav-paragraf">Ресурсы</li>
+                        <li><a href="#" class="header__link">Свяжитесь с нами</a></li>
+                        <li><a href="#" class="header__link">Продукт</a></li>
+                        <li><a href="#" class="header__link">FAQs</a></li>
+                        <li><a href="#" class="header__link">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer__link-contain footer__link-contain_no-border">
+                    <ul class="footer__link-list">
+                        <li class="header__nav-paragraf">подпишитесь <span class="header__nav-paragraf_block">на нас</span></li>
+                        <li><a href="#" class="header__link">Facebook</a></li>
+                        <li><a href="#" class="header__link">Twitter</a></li>
+                        <li><a href="#" class="header__link">Instagram</a></li>
+                        <li><a href="#" class="header__link">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

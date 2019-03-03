@@ -1,0 +1,228 @@
+
+
+.header__modal-login
+    display: none
+
+.header__menu_modal
+    width: 100%
+    height: 100%
+    display: block
+    position: fixed
+    left: 0
+    top: 0
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 2
+
+.menu
+    width: 320px
+    height: 100%
+    position: fixed
+    top: 0
+    right: -320px
+    background-color: white
+    transition: .5s
+    z-index: 2
+    .menu__search
+        width: 100%
+        display: flex
+        border-bottom: 1px solid #e1e1e1
+        .search__contain
+            width: 100%
+            height: 57px
+            max-width: 264px
+            border-right: 1px solid #e1e1e1
+            display: flex
+            align-items: center
+            .search__contain-input
+                width: 100%
+                padding: 0 0 0 15px
+                .contain-input__item
+                    background-color: transparent
+                    border: none
+                    outline: none
+                    width: 100%
+                    font-family: Proxima Nova
+                    font-size: 15px
+            .search__contain-icon
+                margin: 0 20px 0 0
+        .menu__close
+            width: 100%
+            max-width: 56px
+            display: flex
+            align-items: center
+            justify-content: center
+            cursor: pointer
+    .menu__list 
+        margin: 0
+        padding: 0
+        .menu__list-item
+            height: 48px
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: space-between
+            border-bottom: 1px solid #e1e1e1
+            padding: 0 22px 0 15px
+            cursor: pointer
+            
+.menu_open
+    transform: translateX(-320px)
+    transition: .5s
+
+.menu__list-item_red
+    color: red
+    justify-content: flex-start !important
+    &:before
+        content: url('../img/Vector.png')
+        padding: 3px 19px 0 0
+
+.header__modal-login   /* Само окно */
+    width: 100%
+    max-width: 815px
+    height: 563px
+    position: relative
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    background-color: white
+    display: flex
+    align-items: flex-end
+    justify-content: center
+
+.header__modal-login_hide
+    display: none
+
+.modal-login__container    /* Контейнер с инпутами и кнопкой */
+    width: 100%
+    max-width: 600px
+    height: 510px
+    padding: 0 15px
+
+
+.modal-login__close    /* Стили для крестика */
+    width: 12px
+    height: 12px
+    position: absolute
+    margin: 0 15px
+    right: 5px
+    top: 20px
+    cursor: pointer
+
+.modal-login__main 
+    display: flex
+    flex-direction: column
+
+.modal-login__main :nth-child(4) 
+    margin: 7px 0 15px 0
+
+.modal-login__main-mail
+    font-family: 'Proxima Nova'
+    margin: 10px 0 20px 0
+    padding: 0 0 0 14px
+    font-size: 16px
+    outline: none
+    height: 50px
+    border: 1px solid rgba(0, 0, 0, 0.4)
+
+.modal-login__main-check[type = checkbox] 
+    width: 15px
+    height: 15px
+    margin: 1px 7px 0 0
+
+.contain-check 
+    display: flex
+
+.contain-check
+    cursor: pointer
+    width: 25%
+    min-width: 144px
+.contain-check p 
+    margin: 0
+    color: #4d4d4d
+    &:hover 
+        font-weight: bold
+        cursor: pointer
+
+.modal-login__footer 
+    margin: 37px 0 0 0
+
+.modal-login__footer-button
+    font-family: 'Proxima Nova'
+    width: 100%
+    height: 50px
+    font-size: 14px
+    color: white
+    background-color: #0d4f80
+    text-transform: uppercase
+    border: none
+    outline: none
+    letter-spacing: 2px
+    font-weight: bold
+    cursor: pointer
+
+.modal-login__footer-button:hover 
+    background-color: #0a314e
+
+.modal-login__footer-wrapper 
+    display: flex
+    justify-content: space-between
+    font-size: 14px
+    margin: 18px 0 0 0
+
+.footer-wrapper__paragraf p
+    font-family: 'Proxima Nova'
+    line-height: normal
+    color: #999999
+
+.footer-wrapper__link 
+    display: flex
+    width: 34.5%
+    min-width: 125px
+    justify-content: space-between
+    @media screen and (max-width: 695px)
+        flex-wrap: wrap
+        justify-content: flex-end
+        p
+            margin: 0 0 0 15px
+
+
+.footer-wrapper__link p a
+    font-family: 'Proxima Nova'
+    line-height: normal
+    text-decoration: none
+    color: #376D95
+    margin: 0
+
+.footer-wrapper__link p a:hover 
+    text-decoration: underline
+
+.footer-wrapper__paragraf
+    width: 30%
+    min-width: 126px
+
+// Окно входа ^
+
+.submenu__list_hidden
+    display: none
+
+.submenu__list
+    margin: 0
+    padding: 0
+    position: absolute
+    left: 15px
+    top: 49px
+    li
+        height: 35px
+        font-weight: normal
+        text-transform: none
+        line-height: 20px
+        font-size: 16px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: #376D95
+        cursor: pointer
+
+.menu__list_hidden
+    display: none
+    
